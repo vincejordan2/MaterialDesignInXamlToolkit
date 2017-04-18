@@ -7,7 +7,8 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:domain1="clr-namespace:MaterialDesignDemo.Domain"
         xmlns:materialDesignDemo="clr-namespace:MaterialDesignDemo"
-        Title="Material Design in XAML" Height="800" Width="1100"
+        Title="Material Design in XAML" Height="3363.056" Width="3166.667"
+        WindowState="Maximized" 
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -66,7 +67,7 @@
                                 <Button Content="Nice Popup" Click="MenuPopupButton_OnClick"/>
                                 <Button Content="Can't Touch This" IsEnabled="False" />
                                 <Separator/>
-                                <Button Content="Goodbye" Click="MenuPopupButton_OnClick"/>                                
+                                <Button Content="Goodbye" Click="MenuPopupButton_OnClick"/>
                             </StackPanel>
                         </materialDesign:PopupBox>
                         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Material Design In XAML Toolkit</TextBlock>
@@ -74,12 +75,12 @@
                 </materialDesign:ColorZone>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
+                        <!--<RowDefinition Height="Auto" />-->
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <domain1:DocumentationLinks DataContext="{Binding ElementName=DemoItemsListBox, Path=SelectedItem}"
+                    <!--<domain1:DocumentationLinks Grid.Row="0" DataContext="{Binding ElementName=DemoItemsListBox, Path=SelectedItem}"
                                                 Margin="0 0 0 16"
-                                                />
+                                                />-->
                     <ScrollViewer Grid.Row="1" 
                                   HorizontalScrollBarVisibility="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.HorizontalScrollBarVisibilityRequirement}"
                                   VerticalScrollBarVisibility="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.VerticalScrollBarVisibilityRequirement}" 
